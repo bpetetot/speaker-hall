@@ -1,0 +1,18 @@
+.sidebar {
+  background-color: rgba(0, 0, 0, 0.2);
+  font-size: 0.8em;
+}
+
+.sidebar-menu {
+  padding-bottom: 10px;
+}
+
+.sidebar-header {
+  text-transform: uppercase;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.sidebar-link {
+  padding: 5px 0;
+}

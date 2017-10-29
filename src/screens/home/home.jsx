@@ -7,10 +7,10 @@ const Home = () => (
   <div className="home-screen">
     <h1>Speaker Hall</h1>
     <div>
-      <Link href="/speaker" className="home-link">
+      <Link href="/app/speaker" className="home-link">
         I&apos;m a speaker
       </Link>
-      <Link href="/organizer" className="home-link">
+      <Link href="/app/organizer" className="home-link">
         I&apos;m an organizer
       </Link>
     </div>

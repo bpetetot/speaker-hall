@@ -1,11 +1,14 @@
 import { routerForBrowser } from 'redux-little-router'
 
 const routes = {
-  '/speaker': {
-    title: 'Speaker',
-  },
-  '/organizer': {
-    title: 'Organizer',
+  '/app': {
+    '/speaker': {
+      title: 'Speaker',
+    },
+    '/organizer': {
+      title: 'Organizer',
+      color: 'red',
+    },
   },
   '/': {
     title: 'Home',

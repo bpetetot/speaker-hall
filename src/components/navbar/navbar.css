@@ -1,0 +1,10 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background-color: black;
+  color: white;
+}
+
+.navbar-actions {
+  line-height: 60px;
+}

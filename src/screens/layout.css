@@ -1,0 +1,25 @@
+.layout-navbar {
+  grid-area: navbar;
+}
+
+.layout-sidebar {
+  grid-area: sidebar;
+  padding: 20px;
+}
+
+.layout-main {
+  grid-area: main;
+  padding: 20px;
+}
+
+.layout-brand {
+  grid-area: brand;
+}
+
+.layout-screen {
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas: 'brand navbar' 'sidebar main';
+  height: 100%;
+}

@@ -4,21 +4,17 @@ import { Provider } from 'react-redux'
 
 import store from './redux'
 import Home from './screens/home'
-import Speaker from './screens/speaker'
-import Organizer from './screens/organizer'
+import Layout from './screens/layout'
 
 const App = () => (
   <Provider store={store}>
     <Fragment forRoute="/">
-      <div>
+      <div style={{ height: '100%' }}>
         <Fragment forRoute="/">
           <Home />
         </Fragment>
-        <Fragment forRoute="/speaker">
-          <Speaker />
-        </Fragment>
-        <Fragment forRoute="/organizer">
-          <Organizer />
+        <Fragment forRoute="/app">
+          <Layout />
         </Fragment>
       </div>
     </Fragment>
