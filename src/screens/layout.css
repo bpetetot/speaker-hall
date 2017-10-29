@@ -4,7 +4,6 @@
 
 .layout-sidebar {
   grid-area: sidebar;
-  padding: 20px;
 }
 
 .layout-main {
