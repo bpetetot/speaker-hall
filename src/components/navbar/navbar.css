@@ -1,8 +1,7 @@
 .navbar {
   display: flex;
   align-items: center;
-  background-color: black;
-  color: white;
+  background-color: rgba(0, 0, 0, 0.2);
 }
 
 .navbar-actions {

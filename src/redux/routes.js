@@ -4,10 +4,11 @@ const routes = {
   '/app': {
     '/speaker': {
       title: 'Speaker',
+      type: 'speaker',
     },
     '/organizer': {
       title: 'Organizer',
-      color: 'red',
+      type: 'organizer',
     },
   },
   '/': {

@@ -4,14 +4,15 @@ import cn from 'classnames'
 
 import './brand.css'
 
-const Brand = ({ title, className }) => (
-  <div className={cn('brand', className)}>
+const Brand = ({ title, type, className }) => (
+  <div className={cn(`brand brand-${type}`, className)}>
     <span>{title}</span>
   </div>
 )
 
 Brand.propTypes = {
   title: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
   className: PropTypes.string,
 }
 
