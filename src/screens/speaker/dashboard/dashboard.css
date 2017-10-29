@@ -1,0 +1,10 @@
+.dashboard-content {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dashboard-content > div {
+  flex: 1 1 auto;
+  margin: 10px;
+  width: 30%;
+}
