@@ -5,6 +5,8 @@
 
 .sidebar-menu {
   padding-bottom: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .sidebar-header {
@@ -15,6 +17,6 @@
 }
 
 .sidebar-link {
-  padding: 5px 0;
+  padding: 10px 0;
   color: rgba(255, 255, 255, 0.7);
 }
