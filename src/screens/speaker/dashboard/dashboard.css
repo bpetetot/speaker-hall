@@ -1,9 +1,9 @@
-.dashboard-content {
+.dashboard {
   display: flex;
   flex-wrap: wrap;
 }
 
-.dashboard-content > div {
+.dashboard > div {
   flex: 1 1 auto;
   margin: 10px;
   width: 30%;

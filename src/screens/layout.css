@@ -4,11 +4,13 @@
 
 .layout-sidebar {
   grid-area: sidebar;
+  overflow: scroll;
 }
 
 .layout-main {
   grid-area: main;
   padding: 20px;
+  overflow: scroll;
 }
 
 .layout-brand {

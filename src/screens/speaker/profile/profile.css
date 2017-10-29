@@ -1,0 +1,22 @@
+.profile {
+  display: flex;
+  margin: 10px;
+}
+
+.profile > img {
+  max-height: 200px;
+  margin-right: 70px;
+}
+
+.profile-info {
+  width: 100%;
+}
+
+.profile-form {
+  margin: 40px 0;
+}
+
+.profile-button {
+  float: right;
+  margin-right: 10px;
+}
