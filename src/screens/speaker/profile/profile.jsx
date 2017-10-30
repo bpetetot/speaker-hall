@@ -5,9 +5,12 @@ import './profile.css'
 
 const Dashboard = () => (
   <div className="profile">
-    <img src="http://via.placeholder.com/500x500" alt="profile" />
+    <div className="profile-image">
+      <img src="http://via.placeholder.com/500x500" alt="profile" />
+      <a href="/notimplemented">update your image</a>
+    </div>
     <div className="profile-info">
-      <h2>Benjamin Petetot</h2>
+      <h1>Benjamin Petetot</h1>
       <small>benjamin.petetot@email.com</small>
       <div className="profile-form">
         <Input name="company" label="Company" type="text" value="Zenika" />

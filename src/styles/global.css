@@ -4,6 +4,7 @@ body {
   font-family: 'Open Sans Semi Bold', sans-serif;
   background-color: #2a2c2b;
   color: white;
+  font-size: 14px;
 }
 
 #root {
@@ -11,11 +12,6 @@ body {
 }
 
 h1 {
-  font-size: 1.5em;
-  margin: 0 0 10px 0;
-}
-
-h2 {
   font-size: 1.5em;
   margin: 0 0 10px 0;
 }
@@ -30,7 +26,6 @@ button {
   border: 1px solid #0d64ad;
   background-color: #0d64ad;
   transition: opacity 0.5s;
-  font-size: 0.9em;
   font-weight: 400;
   text-align: center;
   cursor: pointer;
@@ -42,4 +37,13 @@ button {
 
 button:hover {
   opacity: 0.8;
+}
+
+a {
+  color: #0d64ad;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #fff;
 }
