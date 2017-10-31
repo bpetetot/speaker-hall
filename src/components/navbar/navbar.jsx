@@ -1,23 +1,20 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cn from 'classnames'
+import { css } from 'glamor'
+import style from './navbar.style'
 
-import './navbar.css'
-
-const Navbar = ({ children, className }) => (
-  <nav className={cn('navbar', className)}>
-    <div className="navbar-actions">{children}</div>
+const Navbar = ({ children }) => (
+  <nav className={css(style.navbar)}>
+    <div className={css(style.actions)}>{children}</div>
   </nav>
 )
 
 Navbar.propTypes = {
-  className: PropTypes.string,
   children: PropTypes.node,
 }
 
 Navbar.defaultProps = {
   children: undefined,
-  className: undefined,
 }
 
 export default Navbar

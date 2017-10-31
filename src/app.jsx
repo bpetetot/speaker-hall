@@ -1,24 +1,35 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Fragment } from 'redux-little-router'
-import { Provider } from 'react-redux'
 
-import store from './redux'
+import { apply, withTheme } from './redux/theme'
 import Home from './screens/home'
 import Layout from './screens/layout'
 
-const App = () => (
-  <Provider store={store}>
-    <Fragment forRoute="/">
-      <div style={{ height: '100%' }}>
-        <Fragment forRoute="/">
-          <Home />
-        </Fragment>
-        <Fragment forRoute="/app">
-          <Layout />
-        </Fragment>
-      </div>
-    </Fragment>
-  </Provider>
+import style from './app.style'
+
+const App = ({ theme }) => (
+  <Fragment forRoute="/">
+    <div className={apply(style, theme)}>
+      <Fragment forRoute="/app/*">
+        <Layout />
+      </Fragment>
+      <Fragment forRoute="/">
+        <Home />
+      </Fragment>
+      <Fragment forNoMatch>
+        <div>404 not found :(</div>
+      </Fragment>
+    </div>
+  </Fragment>
 )
 
-export default App
+App.propTypes = {
+  theme: PropTypes.objectOf(PropTypes.string),
+}
+
+App.defaultProps = {
+  theme: undefined,
+}
+
+export default withTheme(App)

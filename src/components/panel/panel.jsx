@@ -1,12 +1,13 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { css } from 'glamor'
 
-import './panel.css'
+import style from './panel.style'
 
 const Panel = ({ title, children }) => (
-  <div className="panel">
-    <div className="panel-title">{title}</div>
-    <div className="panel-content">{children}</div>
+  <div>
+    <div className={css(style.title)}>{title}</div>
+    <div className={css(style.content)}>{children}</div>
   </div>
 )
 

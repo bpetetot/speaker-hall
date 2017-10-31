@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cn from 'classnames'
+import { css } from 'glamor'
 
-import './iconLabel.css'
+import style from './iconLabel.style'
 
-const IconLabel = ({ icon, label, className }) => (
-  <span className={cn(className, 'icon-label')}>
+const IconLabel = ({ icon, label }) => (
+  <span className={css(style)}>
     <i className={icon} />
     <span>{label}</span>
   </span>
@@ -14,11 +14,5 @@ const IconLabel = ({ icon, label, className }) => (
 IconLabel.propTypes = {
   icon: PropTypes.string.isRequired,
   label: PropTypes.string.isRequired,
-  className: PropTypes.string,
 }
-
-IconLabel.defaultProps = {
-  className: undefined,
-}
-
 export default IconLabel

@@ -1,23 +1,22 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import cn from 'classnames'
 
-import './brand.css'
+import style from './brand.style'
+import { withTheme, apply } from '../../redux/theme'
 
-const Brand = ({ title, type, className }) => (
-  <div className={cn(`brand brand-${type}`, className)}>
+const Brand = ({ title, theme }) => (
+  <div className={apply(style, theme)}>
     <span>{title}</span>
   </div>
 )
 
 Brand.propTypes = {
   title: PropTypes.string.isRequired,
-  type: PropTypes.string.isRequired,
-  className: PropTypes.string,
+  theme: PropTypes.objectOf(PropTypes.string),
 }
 
 Brand.defaultProps = {
-  className: undefined,
+  theme: undefined,
 }
 
-export default Brand
+export default withTheme(Brand)

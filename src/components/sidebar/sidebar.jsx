@@ -1,15 +1,14 @@
 import React from 'react'
-import PropTypes from 'prop-types'
-import cn from 'classnames'
+import { css } from 'glamor'
 
 import IconLabel from '../iconLabel'
 import SideBarPanel from './sideBarPanel'
 import SideBarLink from './sideBarLink'
 
-import './sidebar.css'
+import style from './sidebar.style'
 
-const SideBar = ({ className }) => (
-  <div className={cn('sidebar', className)}>
+const SideBar = () => (
+  <div className={css(style.sidebar)}>
     <SideBarPanel label="General">
       <SideBarLink to="/app/speaker/dashboard">
         <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
@@ -31,13 +30,5 @@ const SideBar = ({ className }) => (
     </SideBarPanel>
   </div>
 )
-
-SideBar.propTypes = {
-  className: PropTypes.string,
-}
-
-SideBar.defaultProps = {
-  className: undefined,
-}
 
 export default SideBar

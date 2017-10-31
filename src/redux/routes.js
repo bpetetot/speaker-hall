@@ -13,6 +13,7 @@ const routes = {
   },
   '/': {
     title: 'Home',
+    type: 'home',
   },
 }
 

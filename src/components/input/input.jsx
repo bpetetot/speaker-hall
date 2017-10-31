@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-
-import './input.css'
+import { css } from 'glamor'
+import style from './input.style'
 
 const Input = ({
   name, label, type, value,
 }) => (
-  <div className="form-input">
+  <div className={css(style)}>
     <label htmlFor={name}>{label}</label>
     <input id={name} type={type} defaultValue={value} />
   </div>
