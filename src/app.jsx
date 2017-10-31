@@ -1,24 +1,31 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Fragment } from 'redux-little-router'
-import { Provider } from 'react-redux'
 
-import store from './redux'
 import Home from './screens/home'
 import Layout from './screens/layout'
 
-const App = () => (
-  <Provider store={store}>
-    <Fragment forRoute="/">
-      <div style={{ height: '100%' }}>
-        <Fragment forRoute="/">
-          <Home />
-        </Fragment>
-        <Fragment forRoute="/app">
-          <Layout />
-        </Fragment>
-      </div>
-    </Fragment>
-  </Provider>
+import withTheme from './styles'
+
+const App = ({ theme }) => (
+  <Fragment forRoute="/">
+    <div className={theme}>
+      <Fragment forRoute="/">
+        <Home />
+      </Fragment>
+      <Fragment forRoute="/app">
+        <Layout />
+      </Fragment>
+    </div>
+  </Fragment>
 )
 
-export default App
+App.propTypes = {
+  theme: PropTypes.string,
+}
+
+App.defaultProps = {
+  theme: 'default-theme',
+}
+
+export default withTheme(App)

@@ -2,12 +2,12 @@
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.sidebar-panel {
+.sidebar .sidebar-panel {
   display: flex;
   flex-direction: column;
 }
 
-.sidebar-header {
+.sidebar .sidebar-header {
   text-transform: uppercase;
   font-weight: bold;
   padding-bottom: 10px;
@@ -15,14 +15,22 @@
   padding: 20px 20px 10px 20px;
 }
 
-.sidebar-link {
+.sidebar a.sidebar-link {
   padding: 10px 0;
   color: rgba(255, 255, 255, 0.7);
-  text-decoration: none;
   padding: 10px 20px 10px 20px;
 }
 
-a.sidebar-link:hover {
+.sidebar a.sidebar-link-active {
+  color: var(--primary-color);
+}
+
+.sidebar a.sidebar-link:hover {
   color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sidebar a.sidebar-link-active:hover {
+  color: var(--primary-color);
   background-color: rgba(255, 255, 255, 0.1);
 }

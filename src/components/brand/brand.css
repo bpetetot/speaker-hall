@@ -3,16 +3,8 @@
   font-weight: bold;
   height: 100%;
   color: rgba(0, 0, 0, 0.4);
-  background-color: #f9be03;
+  background-color: var(--primary-color);
   padding-left: 20px;
   display: flex;
   align-items: center;
-}
-
-.brand-speaker {
-  background-color: #0d64ad;
-}
-
-.brand-organizer {
-  background-color: #dc3522;
 }
