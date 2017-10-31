@@ -11,11 +11,11 @@ const Speaker = () => [
   <SpeakerSidebar key="sidebar" className="layout-sidebar" />,
   /* Main content */
   <div key="content" className="layout-main">
-    <Fragment forRoute="/dashboard">
-      <Dashboard />
-    </Fragment>
     <Fragment forRoute="/profile">
       <Profile />
+    </Fragment>
+    <Fragment forRoute="/">
+      <Dashboard />
     </Fragment>
   </div>,
 ]

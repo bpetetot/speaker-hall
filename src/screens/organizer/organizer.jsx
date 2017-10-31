@@ -10,7 +10,7 @@ const Organizer = () => [
   <OrganizerSidebar key="sidebar" className="layout-sidebar" />,
   /* Main content */
   <div key="content" className="layout-main">
-    <Fragment forRoute="/dashboard">
+    <Fragment forRoute="/">
       <Dashboard />
     </Fragment>
   </div>,

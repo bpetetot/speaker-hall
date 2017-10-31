@@ -7,21 +7,21 @@ import IconLabel from '../../../components/iconLabel'
 const SpeakerSidebar = ({ className }) => (
   <SideBar className={className}>
     <SideBarPanel label="General">
-      <SideBarLink to="/app/speaker/dashboard">
+      <SideBarLink to="/speaker">
         <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
       </SideBarLink>
-      <SideBarLink to="/app/speaker/profile">
+      <SideBarLink to="/speaker/profile">
         <IconLabel icon="fa fa-user-circle" label="Profile" />
       </SideBarLink>
-      <SideBarLink to="/app/speaker/talks">
+      <SideBarLink to="/speaker/talks">
         <IconLabel icon="fa fa-microphone" label="Talks" />
       </SideBarLink>
     </SideBarPanel>
     <SideBarPanel label="Events">
-      <SideBarLink to="/app/speaker/coming">
+      <SideBarLink to="/speaker/coming">
         <IconLabel icon="fa fa-rocket" label="Coming events" />
       </SideBarLink>
-      <SideBarLink to="/app/speaker/last">
+      <SideBarLink to="/speaker/last">
         <IconLabel icon="fa fa-history" label="Last events" />
       </SideBarLink>
     </SideBarPanel>
