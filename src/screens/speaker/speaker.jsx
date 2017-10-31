@@ -1,18 +1,31 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Fragment } from 'redux-little-router'
 
+import SpeakerSidebar from './sidebar'
 import Dashboard from './dashboard'
 import Profile from './profile'
 
-const Speaker = () => (
-  <div>
-    <Fragment forRoute="/dashboard">
-      <Dashboard />
-    </Fragment>
+const Speaker = () => [
+  /* Sidebar */
+  <SpeakerSidebar key="sidebar" className="layout-sidebar" />,
+  /* Main content */
+  <div key="content" className="layout-main">
     <Fragment forRoute="/profile">
       <Profile />
     </Fragment>
-  </div>
-)
+    <Fragment forRoute="/">
+      <Dashboard />
+    </Fragment>
+  </div>,
+]
+
+Speaker.propTypes = {
+  className: PropTypes.string,
+}
+
+Speaker.defaultProps = {
+  className: undefined,
+}
 
 export default Speaker

@@ -13,7 +13,7 @@ const App = ({ theme }) => (
       <Fragment forRoute="/">
         <Home />
       </Fragment>
-      <Fragment forRoute="/app">
+      <Fragment forRoute="(/speaker|/organizer)">
         <Layout />
       </Fragment>
     </div>
