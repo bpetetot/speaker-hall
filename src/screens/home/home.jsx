@@ -5,13 +5,17 @@ import './home.css'
 
 const Home = () => (
   <div className="home-screen">
-    <h1>Speaker Hall</h1>
-    <div>
+    <div className="home-header">
+      <h1>Conference Hall</h1>
+    </div>
+    <div className="home-content">
       <Link href="/speaker" className="home-link">
-        I&apos;m a speaker
+        <i className="fa fa-microphone" />
+        <span>I&apos;m a speaker</span>
       </Link>
       <Link href="/organizer" className="home-link">
-        I&apos;m an organizer
+        <i className="fa fa-rocket" />
+        <span>I&apos;m an organizer</span>
       </Link>
     </div>
   </div>
