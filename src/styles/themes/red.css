@@ -1,7 +1,6 @@
 .red-theme {
   --bg-color: #2a2c2b;
-  --font-family: 'Open Sans Semi Bold', sans-serif;
   --font-color: #fff;
   --font-size: 14px;
-  --primary-color: #dc3522;
+  --primary-color: rgb(220, 53, 34);
 }

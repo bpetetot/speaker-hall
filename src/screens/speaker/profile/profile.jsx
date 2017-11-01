@@ -1,5 +1,6 @@
 import React from 'react'
 
+import Button from '../../../components/button'
 import Input from '../../../components/input'
 import './profile.css'
 
@@ -20,7 +21,7 @@ const Dashboard = () => (
         <Input name="city" label="City" type="text" value="Nantes" />
         <Input name="bio" label="Biography" type="text" />
       </div>
-      <button className="profile-button">Save profile</button>
+      <Button className="profile-button">Save profile</Button>
     </div>
   </div>
 )
