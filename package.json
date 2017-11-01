@@ -1,5 +1,5 @@
 {
-  "name": "speaker-hall",
+  "name": "conference-hall",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -31,17 +31,12 @@
   },
   "eslintConfig": {
     "parser": "babel-eslint",
-    "extends": [
-      "airbnb"
-    ],
+    "extends": ["airbnb"],
     "env": {
       "browser": true
     },
     "rules": {
-      "semi": [
-        2,
-        "never"
-      ],
+      "semi": [2, "never"],
       "import/no-extraneous-dependencies": 0,
       "import/no-unresolved": 0,
       "import/extensions": 0,
