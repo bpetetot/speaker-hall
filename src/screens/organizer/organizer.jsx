@@ -4,6 +4,7 @@ import { Fragment } from 'redux-little-router'
 
 import OrganizerSidebar from './sidebar'
 import Events from './events'
+import Event from './event'
 import Dashboard from './dashboard'
 
 const Organizer = () => [
@@ -13,6 +14,9 @@ const Organizer = () => [
   <div key="content" className="layout-main">
     <Fragment forRoute="/events">
       <Events />
+    </Fragment>
+    <Fragment forRoute="/event/:id">
+      <Event />
     </Fragment>
     <Fragment forRoute="/">
       <Dashboard />

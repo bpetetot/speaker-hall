@@ -26,3 +26,11 @@
   color: var(--primary-color);
   background: var(--font-color);
 }
+
+.btn-link {
+  border: 1px solid var(--primary-color);
+}
+
+.btn-link:hover {
+  border: 1px solid var(--font-color);
+}
