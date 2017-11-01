@@ -17,14 +17,6 @@ const SpeakerSidebar = ({ className }) => (
         <IconLabel icon="fa fa-microphone" label="Talks" />
       </SideBarLink>
     </SideBarPanel>
-    <SideBarPanel label="Events">
-      <SideBarLink to="/speaker/coming">
-        <IconLabel icon="fa fa-rocket" label="Coming events" />
-      </SideBarLink>
-      <SideBarLink to="/speaker/last">
-        <IconLabel icon="fa fa-history" label="Last events" />
-      </SideBarLink>
-    </SideBarPanel>
   </SideBar>
 )
 
