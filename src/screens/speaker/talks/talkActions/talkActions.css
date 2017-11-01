@@ -1,0 +1,10 @@
+.talks-actions {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.talks-actions input {
+  max-width: 400px;
+  margin-right: 20px;
+}

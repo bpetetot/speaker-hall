@@ -5,6 +5,7 @@ import { Fragment } from 'redux-little-router'
 import SpeakerSidebar from './sidebar'
 import Dashboard from './dashboard'
 import Profile from './profile'
+import Talks from './talks'
 
 const Speaker = () => [
   /* Sidebar */
@@ -13,6 +14,9 @@ const Speaker = () => [
   <div key="content" className="layout-main">
     <Fragment forRoute="/profile">
       <Profile />
+    </Fragment>
+    <Fragment forRoute="/talks">
+      <Talks />
     </Fragment>
     <Fragment forRoute="/">
       <Dashboard />

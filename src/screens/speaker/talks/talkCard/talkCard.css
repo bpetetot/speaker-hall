@@ -1,0 +1,16 @@
+.talk-card .talk-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+.talk-card .talk-header > a {
+  font-size: 1.3em;
+  margin-bottom: 5px;
+}
+
+.talk-card .talk-header .talk-badges > * {
+  margin-left: 10px;
+}
