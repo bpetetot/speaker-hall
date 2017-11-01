@@ -5,9 +5,7 @@ import cn from 'classnames'
 import './navbar.css'
 
 const Navbar = ({ children, className }) => (
-  <nav className={cn('navbar', className)}>
-    <div className="navbar-actions">{children}</div>
-  </nav>
+  <nav className={cn('navbar', className)}>{children}</nav>
 )
 
 Navbar.propTypes = {

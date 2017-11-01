@@ -1,9 +1,11 @@
 .navbar {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
+  padding-right: 20px;
   background-color: rgba(0, 0, 0, 0.2);
 }
 
-.navbar-actions {
-  line-height: 60px;
+.navbar > * {
+  margin-left: 20px;
 }
