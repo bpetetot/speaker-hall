@@ -1,10 +1,11 @@
 .brand {
-  font-size: 1.5em;
-  font-weight: bold;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.4);
-  background-color: var(--primary-color);
-  padding-left: 20px;
-  display: flex;
   align-items: center;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 700;
+  height: 100%;
+  letter-spacing: 1px;
+  padding-left: 20px;
 }

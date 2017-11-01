@@ -1,11 +1,9 @@
 .default-theme {
   --bg-color: #2a2c2b;
-  --font-family: 'Open Sans Semi Bold', sans-serif;
   --font-color: #fff;
   --font-size: 14px;
-  --primary-color: #f9be03;
+  --primary-color: rgb(249, 190, 3);
 
-  font-family: var(--font-family);
   background-color: var(--bg-color);
   color: var(--font-color);
   font-size: var(--font-size);
@@ -19,25 +17,6 @@
 
 .default-theme small {
   color: rgba(255, 255, 255, 0.45);
-}
-
-.default-theme button {
-  text-transform: uppercase;
-  color: var(--font-color);
-  border: 1px solid var(--primary-color);
-  background-color: var(--primary-color);
-  transition: opacity 0.5s;
-  font-weight: 400;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 3px;
-  padding: 10px 16px;
-  outline: none;
-  min-width: 100px;
-}
-
-.default-theme button:hover {
-  opacity: 0.8;
 }
 
 .default-theme a {
