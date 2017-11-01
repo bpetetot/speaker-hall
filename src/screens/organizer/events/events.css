@@ -1,0 +1,33 @@
+.events {
+  --border-color-table: rgba(255, 255, 255, 0.2);
+}
+
+.events-header {
+  background: rgba(255, 255, 255, 0.1);
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  border-top: 1px solid var(--border-color-table);
+  border-left: 1px solid var(--border-color-table);
+  border-right: 1px solid var(--border-color-table);
+  padding: 15px;
+}
+
+.events-content {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border: 1px solid var(--border-color-table);
+}
+
+.events-content > div {
+  border-bottom: 1px solid var(--border-color-table);
+  padding: 15px;
+}
+
+.events-content > div:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.events-content > div:last-child {
+  border-bottom: none;
+  border-radius: 3px;
+}

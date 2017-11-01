@@ -1,10 +1,10 @@
-.talk-actions {
+.event-actions {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
 
-.talk-actions input {
+.event-actions input {
   max-width: 400px;
   margin-right: 20px;
 }

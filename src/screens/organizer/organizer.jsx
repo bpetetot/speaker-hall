@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { Fragment } from 'redux-little-router'
 
 import OrganizerSidebar from './sidebar'
+import Events from './events'
 import Dashboard from './dashboard'
 
 const Organizer = () => [
@@ -10,6 +11,9 @@ const Organizer = () => [
   <OrganizerSidebar key="sidebar" className="layout-sidebar" />,
   /* Main content */
   <div key="content" className="layout-main">
+    <Fragment forRoute="/events">
+      <Events />
+    </Fragment>
     <Fragment forRoute="/">
       <Dashboard />
     </Fragment>
