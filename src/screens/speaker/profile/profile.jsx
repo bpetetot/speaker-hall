@@ -2,6 +2,7 @@ import React from 'react'
 
 import Button from '../../../components/button'
 import Input from '../../../components/input'
+import Textarea from '../../../components/textarea'
 import './profile.css'
 
 const Dashboard = () => (
@@ -19,7 +20,7 @@ const Dashboard = () => (
         <Input name="language" label="Favorite language" type="text" value="French" />
         <Input name="country" label="Country" type="text" value="France" />
         <Input name="city" label="City" type="text" value="Nantes" />
-        <Input name="bio" label="Biography" type="text" />
+        <Textarea name="bio" label="Biography" />
       </div>
       <Button className="profile-button">Save profile</Button>
     </div>
