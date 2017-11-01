@@ -6,8 +6,8 @@ import Button from '../../../../components/button'
 import './talkActions.css'
 
 const TalkActions = () => (
-  <div className="talks-actions">
-    <Input placeholder="Search talks" />
+  <div className="talk-actions">
+    <Input type="search" name="search" placeholder="Search talks" />
     <Button>New talk</Button>
   </div>
 )

@@ -11,7 +11,7 @@ const OrganizerSideBar = ({ className }) => (
         <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
       </SideBarLink>
       <SideBarLink to="/organizer/events">
-        <IconLabel icon="fa fa-user-circle" label="My events" />
+        <IconLabel icon="fa fa-calendar-o" label="Events" />
       </SideBarLink>
     </SideBarPanel>
   </SideBar>
