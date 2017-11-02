@@ -15,7 +15,7 @@ const Organizer = () => [
     <Fragment forRoute="/events">
       <Events />
     </Fragment>
-    <Fragment forRoute="/event/(:id)">
+    <Fragment forRoute="/event/:id">
       <Event />
     </Fragment>
     <Fragment forRoute="/">
