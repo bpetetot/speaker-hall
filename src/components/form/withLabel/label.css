@@ -9,5 +9,5 @@
   overflow: hidden;
   text-overflow: ellipsis;
   text-transform: uppercase;
-  width: 30%;
+  min-width: 20%;
 }
