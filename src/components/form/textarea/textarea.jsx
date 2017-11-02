@@ -1,17 +1,17 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Label from '../label'
 import './textarea.css'
 
 const Textarea = ({
   name, label, value, placeholder,
 }) => (
-  <div className="form-input">
-    {label && <label htmlFor={name}>{label}</label>}
+  <Label name={name} label={label}>
     <textarea name={name} placeholder={placeholder}>
       {value}
     </textarea>
-  </div>
+  </Label>
 )
 
 Textarea.propTypes = {

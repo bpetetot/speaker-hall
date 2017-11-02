@@ -1,17 +1,17 @@
 import React from 'react'
+import { Link } from 'redux-little-router'
 
-import { LinkButton } from '../../../../components/button'
 import IconLabel from '../../../../components/iconLabel'
-import Input from '../../../../components/input'
+import Input from '../../../../components/form/input'
 
 import './eventActions.css'
 
 const EventActions = () => (
   <div className="event-actions">
     <Input type="search" name="search" placeholder="Search events" />
-    <LinkButton href="/organizer/event/new">
+    <Link href="/organizer/event/new" className="btn btn-link">
       <IconLabel icon="fa fa-calendar-plus-o" label="Create event" />
-    </LinkButton>
+    </Link>
   </div>
 )
 

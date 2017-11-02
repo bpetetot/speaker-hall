@@ -1,15 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Label from '../label'
 import './input.css'
 
 const Input = ({
   name, label, type, value, placeholder,
 }) => (
-  <div className="form-input">
-    {label && <label htmlFor={name}>{label}</label>}
+  <Label name={name} label={label}>
     <input id={name} type={type} defaultValue={value} placeholder={placeholder} />
-  </div>
+  </Label>
 )
 
 Input.propTypes = {

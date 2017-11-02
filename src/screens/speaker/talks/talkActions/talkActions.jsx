@@ -1,17 +1,17 @@
 import React from 'react'
+import { Link } from 'redux-little-router'
 
-import { LinkButton } from '../../../../components/button'
 import IconLabel from '../../../../components/iconLabel'
-import Input from '../../../../components/input'
+import Input from '../../../../components/form/input'
 
 import './talkActions.css'
 
 const TalkActions = () => (
   <div className="talk-actions">
     <Input type="search" name="search" placeholder="Search talks" />
-    <LinkButton href="/speaker/talk/new">
+    <Link href="/speaker/talk/new" className="btn btn-link">
       <IconLabel icon="fa fa-microphone" label="Create talk" />
-    </LinkButton>
+    </Link>
   </div>
 )
 

@@ -1,0 +1,13 @@
+.form-input {
+  align-items: center;
+  display: flex;
+  width: 100%;
+}
+
+.form-input > label {
+  color: rgba(255, 255, 255, 0.3);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  width: 30%;
+}
