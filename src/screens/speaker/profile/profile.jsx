@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'redux-little-router'
 
 import { InputLabel, TextareaLabel } from '../../../components/form'
 import './profile.css'
@@ -21,9 +20,7 @@ const Dashboard = () => (
         <InputLabel name="country" label="Country" type="text" value="France" />
         <TextareaLabel name="bio" label="Biography" />
       </div>
-      <Link href="/" className="profile-button btn btn-primary">
-        Save profile
-      </Link>
+      <button className="profile-button btn btn-primary">Save profile</button>
     </div>
   </div>
 )
