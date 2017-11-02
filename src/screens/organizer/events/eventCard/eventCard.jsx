@@ -15,7 +15,7 @@ const EventCard = ({
   return (
     <div className="event-card">
       <div className="event-header">
-        <Link href={`/organizer/events/${id}`}>{title}</Link>
+        <Link href={`/organizer/event/${id}`}>{title}</Link>
         <div className="event-badges">
           {badges.map(badge => <Badge key={badge}>{badge}</Badge>)}
         </div>

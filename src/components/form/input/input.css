@@ -1,18 +1,4 @@
-.form-input {
-  align-items: center;
-  display: flex;
-  width: 100%;
-}
-
-.form-input > label {
-  color: rgba(255, 255, 255, 0.3);
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-transform: uppercase;
-  width: 30%;
-}
-
-.form-input > input {
+input {
   background: rgba(255, 255, 255, 0.2);
   border-radius: 3px;
   border: none;
@@ -25,7 +11,7 @@
   width: 100%;
 }
 
-.form-input > input:focus {
+input:focus {
   background: #fff;
   color: rgba(0, 0, 0, 0.7);
 }
