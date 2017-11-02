@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'redux-little-router'
 
 import IconLabel from '../../../../components/iconLabel'
-import Input from '../../../../components/form/input'
+import { Input } from '../../../../components/form'
 
 import './eventActions.css'
 
