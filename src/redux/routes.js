@@ -14,11 +14,19 @@ const routes = {
       title: 'events',
     },
     '/event/:id': {
-      '/cfp': {
-        title: 'cfpSettings',
+      '/dashboard': {
+        title: 'eventDashboard',
       },
-      '/members': {
-        title: 'members',
+      '/edit': {
+        '/cfp': {
+          title: 'cfpSettings',
+        },
+        '/members': {
+          title: 'members',
+        },
+      },
+      '/cfp': {
+        title: 'Call for paper',
       },
     },
   },
