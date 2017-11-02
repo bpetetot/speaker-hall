@@ -17,6 +17,7 @@
 .default-theme a {
   color: var(--primary-color);
   text-decoration: none;
+  transition: all 0.5s;
 }
 
 .default-theme a:hover {

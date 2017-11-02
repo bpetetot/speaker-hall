@@ -1,0 +1,27 @@
+.tabs {
+  margin: 10px 0 30px 0;
+  padding: 0;
+  width: 100%;
+  text-align: right;
+}
+
+.tabs > li {
+  display: inline;
+  list-style: none;
+  text-transform: uppercase;
+  margin-left: 3em;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+}
+
+.tabs > li a {
+  color: var(--font-color);
+}
+
+.tabs > li a.tab-link-active {
+  color: var(--primary-color);
+}
+
+.tabs > li:first-child {
+  margin-left: 0;
+}

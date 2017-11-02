@@ -1,0 +1,7 @@
+.event-info > * {
+  margin-bottom: 15px;
+}
+
+.event-info .event-button {
+  float: right;
+}
