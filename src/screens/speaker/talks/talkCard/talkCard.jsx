@@ -15,7 +15,7 @@ const TalkCard = ({
   return (
     <div className="talk-card">
       <div className="talk-header">
-        <Link href={`/speaker/talks/${id}`}>{title}</Link>
+        <Link href={`/app/speaker/talks/${id}`}>{title}</Link>
         <div className="talk-badges">{badges.map(badge => <Badge key={badge}>{badge}</Badge>)}</div>
       </div>
       <small>

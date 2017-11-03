@@ -1,37 +1,25 @@
 import { routerForBrowser } from 'redux-little-router'
 
 const routes = {
-  '/speaker': {
-    '/profile': {
-      title: 'profile',
+  '/app': {
+    '/speaker': {
+      '/profile': {},
+      '/talks': {},
     },
-    '/talks': {
-      title: 'talks',
-    },
-  },
-  '/organizer': {
-    '/events': {
-      title: 'events',
-    },
-    '/event/:id': {
-      '/dashboard': {
-        title: 'eventDashboard',
-      },
-      '/edit': {
-        '/cfp': {
-          title: 'cfpSettings',
+    '/organizer': {
+      '/events': {},
+      '/event/:id': {
+        '/dashboard': {},
+        '/edit': {
+          '/cfp': {},
+          '/members': {},
         },
-        '/members': {
-          title: 'members',
-        },
-      },
-      '/cfp': {
-        title: 'Call for paper',
+        '/cfp': {},
       },
     },
   },
   '/': {
-    title: 'home',
+    '/login': {},
   },
 }
 

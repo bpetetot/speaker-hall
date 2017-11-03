@@ -10,12 +10,10 @@ import withTheme from './styles'
 const App = ({ theme }) => (
   <Fragment forRoute="/">
     <div className={theme}>
-      <Fragment forRoute="/">
-        <Home />
-      </Fragment>
-      <Fragment forRoute="(/speaker|/organizer)">
+      <Fragment forRoute="/app">
         <Layout />
       </Fragment>
+      <Home />
     </div>
   </Fragment>
 )

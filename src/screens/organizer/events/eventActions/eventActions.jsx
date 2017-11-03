@@ -9,7 +9,7 @@ import './eventActions.css'
 const EventActions = () => (
   <div className="event-actions">
     <Input type="search" name="search" placeholder="Search events" />
-    <Link href="/organizer/event/new/edit" className="btn btn-link">
+    <Link href="/app/organizer/event/new/edit" className="btn btn-link">
       <IconLabel icon="fa fa-calendar-plus-o" label="Create event" />
     </Link>
   </div>

@@ -12,8 +12,8 @@ export default (Component) => {
     const { pathname } = state.router
     return {
       theme: classnames('default-theme', {
-        'blue-theme': startsWith(pathname, '/speaker'),
-        'red-theme': startsWith(pathname, '/organizer'),
+        'blue-theme': startsWith(pathname, '/app/speaker'),
+        'red-theme': startsWith(pathname, '/app/organizer'),
       }),
     }
   }

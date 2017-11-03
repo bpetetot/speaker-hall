@@ -8,22 +8,22 @@ import IconLabel from '../../../components/iconLabel'
 const OrganizerSideBar = ({ className }) => (
   <SideBar className={className}>
     <SideBarPanel label="General">
-      <SideBarLink to="/organizer">
+      <SideBarLink to="/app/organizer">
         <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
       </SideBarLink>
-      <SideBarLink to="/organizer/events">
+      <SideBarLink to="/app/organizer/events">
         <IconLabel icon="fa fa-calendar-o" label="Events" />
       </SideBarLink>
     </SideBarPanel>
     <Fragment forRoute="/event/:id">
       <SideBarPanel label="Devfest Nantes 2017">
-        <SideBarLink to="/organizer/event/id/dashboard">
+        <SideBarLink to="/app/organizer/event/id/dashboard">
           <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
         </SideBarLink>
-        <SideBarLink to="/organizer/event/id/edit">
+        <SideBarLink to="/app/organizer/event/id/edit">
           <IconLabel icon="fa fa-gear" label="Configuration" />
         </SideBarLink>
-        <SideBarLink to="/organizer/event/id/cfp">
+        <SideBarLink to="/app/organizer/event/id/cfp">
           <IconLabel icon="fa fa-microphone" label="Call for paper" />
         </SideBarLink>
       </SideBarPanel>
