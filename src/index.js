@@ -8,7 +8,10 @@ import 'font-awesome/css/font-awesome.min.css'
 
 import store from './redux'
 import App from './app'
-import registerServiceWorker from './registerServiceWorker'
+
+import { initFirebase } from './firebase'
+
+initFirebase()
 
 ReactDOM.render(
   <Provider store={store}>
@@ -16,5 +19,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById('root'),
 )
-
-registerServiceWorker()
