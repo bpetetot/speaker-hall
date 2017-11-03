@@ -6,7 +6,7 @@ import './profile.css'
 const Dashboard = () => (
   <div className="profile">
     <div className="profile-image">
-      <img src="http://via.placeholder.com/500x500" alt="profile" />
+      <img src="https://via.placeholder.com/500x500" alt="profile" />
       <a href="/notimplemented">update your image</a>
     </div>
     <div className="profile-info">
