@@ -9,10 +9,10 @@ const config = {
 }
 
 export const initFirebase = () => {
-  /** intialize firebase app */
+  /** initialize firebase app */
   const app = firebase.initializeApp(config)
 
-  /** intialize firestore */
+  /** initialize firestore */
   app.firestore()
 }
 
