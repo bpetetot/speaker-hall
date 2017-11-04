@@ -7,7 +7,9 @@
   background-color: var(--bg-color);
   color: var(--font-color);
   font-size: var(--font-size);
+
   height: 100%;
+  overflow: scroll;
 }
 
 .default-theme small {

@@ -4,7 +4,17 @@
 }
 
 .dashboard > div {
-  flex: 1 1 auto;
-  margin: 10px;
-  width: 30%;
+  margin: 1em;
+  flex: 1 0 0;
+  min-width: 250px;
+}
+
+@media only screen and (max-width: 640px) {
+  .dashboard {
+    flex-direction: column;
+  }
+  .dashboard > div {
+    margin: 0.3em;
+    min-width: 0;
+  }
 }

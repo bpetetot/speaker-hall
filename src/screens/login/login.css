@@ -1,25 +1,24 @@
-.login > h1 {
-  text-align: center;
-  height: 100%;
-  padding: 50px;
-  font-size: 3em;
-}
-
-.login > div {
+.login {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
   height: 100%;
+}
+
+.login .login-title {
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.login .login-back {
+  margin-top: 30px;
 }
 
 .login button {
-  margin-bottom: 20px;
+  margin: 10px 0;
   min-width: 300px;
-}
-
-.login button:last-child {
-  margin-bottom: 0;
 }
 
 .login button.btn-google {
