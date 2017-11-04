@@ -2,9 +2,8 @@ import React from 'react'
 import { Fragment } from 'redux-little-router'
 
 import protect from '../../components/protect'
-import Avatar from '../../components/avatar'
 import Brand from '../../components/brand'
-import Navbar from '../../components/navbar'
+import Navbar from '../common/navbar'
 import Sidebar from './sidebar'
 import Dashboard from './dashboard'
 import Profile from './profile'
@@ -12,13 +11,10 @@ import Talks from './talks'
 
 import './speaker.css'
 
-const Speaker = ({ signout }) => (
+const Speaker = () => (
   <div className="speaker-layout">
     <Brand className="speaker-brand" />
-    <Navbar className="speaker-navbar">
-      <button onClick={signout}>disconnect</button>
-      <Avatar fullname="B" />
-    </Navbar>
+    <Navbar className="speaker-navbar" />
     <Sidebar className="speaker-sidebar" />
     <div className="speaker-main">
       <Fragment forRoute="/profile">
