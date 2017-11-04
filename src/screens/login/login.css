@@ -1,14 +1,53 @@
-.home-login {
+.login > h1 {
+  text-align: center;
+  height: 100%;
+  padding: 50px;
+  font-size: 3em;
+}
+
+.login > div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 
-.home-login > button {
-  margin: 20px 0;
+.login button {
+  margin-bottom: 20px;
   min-width: 300px;
 }
 
-.home-login > button:last-child {
-  margin: 0;
+.login button:last-child {
+  margin-bottom: 0;
+}
+
+.login button.btn-google {
+  background: #ea2533;
+  color: #fff;
+}
+
+.login button.btn-google:hover {
+  background: #fff;
+  color: #ea2533;
+}
+
+.login button.btn-twitter {
+  background: #34ccfe;
+  color: #fff;
+}
+
+.login button.btn-twitter:hover {
+  background: #fff;
+  color: #34ccfe;
+}
+
+.login button.btn-github {
+  background: #000;
+  color: #fff;
+}
+
+.login button.btn-github:hover {
+  background: #fff;
+  color: #000;
 }
