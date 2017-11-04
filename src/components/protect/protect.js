@@ -1,7 +1,7 @@
 /* eslint-disable react/jsx-filename-extension */
 import React from 'react'
 import PropTypes from 'prop-types'
-import { push } from 'redux-little-router'
+import { replace } from 'redux-little-router'
 import { connect } from 'react-redux'
 
 import { isAuthenticated, isInitialized } from '../../redux/auth'
@@ -12,6 +12,7 @@ export default (Component) => {
       authenticated: PropTypes.bool.isRequired,
       initialized: PropTypes.bool.isRequired,
       redirectLogin: PropTypes.func.isRequired,
+      url: PropTypes.string.isRequired,
     }
 
     componentDidMount() {
@@ -23,9 +24,11 @@ export default (Component) => {
     }
 
     checkAuth = () => {
-      const { authenticated, initialized, redirectLogin } = this.props
+      const {
+        authenticated, initialized, redirectLogin, url,
+      } = this.props
       if (initialized && !authenticated) {
-        redirectLogin()
+        redirectLogin(url)
       }
     }
 
@@ -38,10 +41,11 @@ export default (Component) => {
   const mapState = state => ({
     authenticated: isAuthenticated(state),
     initialized: isInitialized(state),
+    url: state.router.pathname,
   })
 
   const mapDispatch = dispatch => ({
-    redirectLogin: () => dispatch(push('/login')),
+    redirectLogin: url => dispatch(replace(`/login?next=${url}`)),
   })
 
   return connect(mapState, mapDispatch)(ProtectedComponent)

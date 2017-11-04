@@ -12,10 +12,11 @@ import Talks from './talks'
 
 import './speaker.css'
 
-const Speaker = () => (
+const Speaker = ({ signout }) => (
   <div className="speaker-layout">
     <Brand className="speaker-brand" />
     <Navbar className="speaker-navbar">
+      <button onClick={signout}>disconnect</button>
       <Avatar fullname="B" />
     </Navbar>
     <Sidebar className="speaker-sidebar" />
