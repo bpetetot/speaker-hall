@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import IconLabel from '../../../components/iconLabel'
+import IconLabel from '../../components/iconLabel'
 import './login.css'
 
 const Login = ({ user, signin, signout }) => (

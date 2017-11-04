@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 
-import { signin, signout, getUser } from '../../../redux/auth'
+import { signin, signout, getUser } from '../../redux/auth'
 
 import Login from './login'
 

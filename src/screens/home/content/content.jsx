@@ -5,11 +5,11 @@ import './content.css'
 
 const componentName = () => (
   <div className="home-content">
-    <Link href="/app/speaker" className="home-link">
+    <Link href="/speaker" className="home-link">
       <i className="fa fa-microphone" />
       <span>I&apos;m a speaker</span>
     </Link>
-    <Link href="/app/organizer" className="home-link">
+    <Link href="/organizer" className="home-link">
       <i className="fa fa-rocket" />
       <span>I&apos;m an organizer</span>
     </Link>
