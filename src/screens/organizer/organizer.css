@@ -1,23 +1,23 @@
-.layout-navbar {
+.organizer-navbar {
   grid-area: navbar;
 }
 
-.layout-sidebar {
+.organizer-sidebar {
   grid-area: sidebar;
   overflow: scroll;
 }
 
-.layout-main {
+.organizer-main {
   grid-area: main;
   padding: 20px;
   overflow: scroll;
 }
 
-.layout-brand {
+.organizer-brand {
   grid-area: brand;
 }
 
-.layout-screen {
+.organizer-layout {
   display: grid;
   grid-template-columns: 240px auto;
   grid-template-rows: 60px auto;

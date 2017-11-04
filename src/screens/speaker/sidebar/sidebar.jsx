@@ -7,13 +7,13 @@ import IconLabel from '../../../components/iconLabel'
 const SpeakerSidebar = ({ className }) => (
   <SideBar className={className}>
     <SideBarPanel label="General">
-      <SideBarLink to="/app/speaker">
+      <SideBarLink to="/speaker">
         <IconLabel icon="fa fa-pie-chart" label="Dashboard" />
       </SideBarLink>
-      <SideBarLink to="/app/speaker/profile">
+      <SideBarLink to="/speaker/profile">
         <IconLabel icon="fa fa-user-circle" label="Profile" />
       </SideBarLink>
-      <SideBarLink to="/app/speaker/talks">
+      <SideBarLink to="/speaker/talks">
         <IconLabel icon="fa fa-microphone" label="Talks" />
       </SideBarLink>
     </SideBarPanel>

@@ -1,0 +1,26 @@
+.speaker-navbar {
+  grid-area: navbar;
+}
+
+.speaker-sidebar {
+  grid-area: sidebar;
+  overflow: scroll;
+}
+
+.speaker-main {
+  grid-area: main;
+  padding: 20px;
+  overflow: scroll;
+}
+
+.speaker-brand {
+  grid-area: brand;
+}
+
+.speaker-layout {
+  display: grid;
+  grid-template-columns: 240px auto;
+  grid-template-rows: 60px auto;
+  grid-template-areas: 'brand navbar' 'sidebar main';
+  height: 100%;
+}
