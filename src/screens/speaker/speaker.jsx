@@ -1,6 +1,7 @@
 import React from 'react'
 import { Fragment } from 'redux-little-router'
 
+import protect from '../../components/protect'
 import Avatar from '../../components/avatar'
 import Brand from '../../components/brand'
 import Navbar from '../../components/navbar'
@@ -32,4 +33,4 @@ const Speaker = () => (
   </div>
 )
 
-export default Speaker
+export default protect(Speaker)
