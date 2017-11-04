@@ -8,13 +8,38 @@ const config = {
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 }
 
-export const initFirebase = () => {
-  /** initialize firebase app */
-  const app = firebase.initializeApp(config)
-
-  /** initialize firestore */
-  app.firestore()
+const getUserProfile = (user) => {
+  if (user) {
+    return {
+      uid: user.uid,
+      displayName: user.displayName,
+      email: user.email,
+      photoURL: user.photoURL,
+    }
+  }
+  return undefined
 }
 
-/** firebase api */
+export const initFirebase = (store) => {
+  // initialize firebase app
+  const app = firebase.initializeApp(config)
+
+  // initialize firestore
+  app.firestore()
+
+  // intialize authentication locale
+  firebase.auth().useDeviceLanguage()
+
+  // manage authenticated user status
+  firebase.auth().onAuthStateChanged((user) => {
+    if (user) {
+      // User is signed in.
+      store.dispatch({ type: 'SIGNIN', payload: getUserProfile(user) })
+    } else {
+      // No user is signed in.
+      store.dispatch({ type: 'SIGNOUT' })
+    }
+  })
+}
+
 export default firebase

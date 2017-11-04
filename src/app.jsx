@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { Fragment } from 'redux-little-router'
 
+import PrivateFragment from './components/privateFragment'
 import Home from './screens/home'
 import Layout from './screens/layout'
 
@@ -10,9 +11,9 @@ import withTheme from './styles'
 const App = ({ theme }) => (
   <Fragment forRoute="/">
     <div className={theme}>
-      <Fragment forRoute="/app">
+      <PrivateFragment forRoute="/app">
         <Layout />
-      </Fragment>
+      </PrivateFragment>
       <Home />
     </div>
   </Fragment>

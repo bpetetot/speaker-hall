@@ -1,0 +1,14 @@
+.home-login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.home-login > button {
+  margin: 20px 0;
+  min-width: 300px;
+}
+
+.home-login > button:last-child {
+  margin: 0;
+}

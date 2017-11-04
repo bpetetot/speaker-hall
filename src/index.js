@@ -9,10 +9,6 @@ import 'font-awesome/css/font-awesome.min.css'
 import store from './redux'
 import App from './app'
 
-import { initFirebase } from './firebase'
-
-initFirebase()
-
 ReactDOM.render(
   <Provider store={store}>
     <App />
