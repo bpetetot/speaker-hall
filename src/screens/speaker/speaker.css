@@ -24,3 +24,16 @@
   grid-template-areas: 'brand navbar' 'sidebar main';
   height: 100%;
 }
+
+@media only screen and (max-width: 640px) {
+  .speaker-layout {
+    grid-template-columns: auto auto;
+    grid-template-areas: 'brand brand' 'main main';
+  }
+  .speaker-sidebar {
+    display: none;
+  }
+  .speaker-navbar {
+    display: none;
+  }
+}
