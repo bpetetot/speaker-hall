@@ -1,5 +1,6 @@
 .avatar-menu {
   position: relative;
+  outline: none;
 }
 
 .avatar-menu .menu-content {

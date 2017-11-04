@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Navbar from '../../../components/navbar'
-import AvatarMenu from '../avatarMenu'
+import AvatarMenu from './avatarMenu'
 
 const SpeakerNavbar = ({ className }) => (
   <Navbar className={className}>

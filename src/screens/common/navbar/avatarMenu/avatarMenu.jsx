@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
-import Avatar from '../../../components/avatar'
+import Avatar from '../../../../components/avatar'
 import './avatarMenu.css'
 
 class MenuContainer extends Component {
@@ -32,7 +32,7 @@ class MenuContainer extends Component {
     const { visible } = this.state
     return (
       <div role="button" tabIndex="0" className="avatar-menu" onClick={this.handleClick}>
-        <Avatar image={image} />
+        <Avatar image={image} fullname={fullname} />
         <div
           ref={(e) => {
             this.menu = e
