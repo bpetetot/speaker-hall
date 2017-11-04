@@ -1,18 +1,19 @@
 import { combineReducers, createStore, applyMiddleware } from 'redux'
 import { composeWithDevTools } from 'redux-devtools-extension'
 import thunk from 'redux-thunk'
-import { reducer, middleware, enhancer } from './routes'
 
-import { initFirebase } from '../firebase'
+import { reducer as router, middleware as routerMiddleware, enhancer } from './routes'
+import firebase, { middleware as firebaseMiddleware } from './firebase'
+
 import auth from './auth'
 
 /** create redux store */
 const store = createStore(
-  combineReducers({ router: reducer, auth }),
-  composeWithDevTools(applyMiddleware(middleware, thunk), enhancer),
+  combineReducers({ router, auth }),
+  composeWithDevTools(
+    applyMiddleware(routerMiddleware, firebaseMiddleware, thunk.withExtraArgument(firebase)),
+    enhancer,
+  ),
 )
-
-/** initialize firebase */
-initFirebase(store)
 
 export default store

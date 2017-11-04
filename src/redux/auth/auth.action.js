@@ -1,6 +1,4 @@
-import firebase from '../../firebase'
-
-export const signin = () => async () => {
+export const signin = () => async (dispatch, getState, firebase) => {
   const provider = new firebase.auth.GoogleAuthProvider()
   try {
     await firebase.auth().signInWithPopup(provider)
@@ -10,7 +8,7 @@ export const signin = () => async () => {
   }
 }
 
-export const signout = () => async () => {
+export const signout = () => async (dispatch, getState, firebase) => {
   try {
     await firebase.auth().signOut()
   } catch (error) {

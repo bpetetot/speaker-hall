@@ -6,9 +6,9 @@ const initialState = {
 
 export default (state = initialState, action = {}) => {
   switch (action.type) {
-    case 'SIGNIN':
+    case 'FIREBASE_SIGNIN':
       return { initialized: true, authenticated: true, user: action.payload }
-    case 'SIGNOUT':
+    case 'FIREBASE_SIGNOUT':
       return { initialized: true, authenticated: false, user: undefined }
     default:
       return state

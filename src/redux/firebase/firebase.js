@@ -8,19 +8,7 @@ const config = {
   projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
 }
 
-const getUserProfile = (user) => {
-  if (user) {
-    return {
-      uid: user.uid,
-      displayName: user.displayName,
-      email: user.email,
-      photoURL: user.photoURL,
-    }
-  }
-  return undefined
-}
-
-export const initFirebase = (store) => {
+export const middleware = ({ dispatch }) => (next) => {
   // initialize firebase app
   const app = firebase.initializeApp(config)
 
@@ -34,12 +22,25 @@ export const initFirebase = (store) => {
   firebase.auth().onAuthStateChanged((user) => {
     if (user) {
       // User is signed in.
-      store.dispatch({ type: 'SIGNIN', payload: getUserProfile(user) })
+      const {
+        uid, displayName, email, photoURL,
+      } = user
+      dispatch({
+        type: 'FIREBASE_SIGNIN',
+        payload: {
+          uid,
+          displayName,
+          email,
+          photoURL,
+        },
+      })
     } else {
       // No user is signed in.
-      store.dispatch({ type: 'SIGNOUT' })
+      dispatch({ type: 'FIREBASE_SIGNOUT' })
     }
   })
+
+  return action => next(action)
 }
 
 export default firebase
