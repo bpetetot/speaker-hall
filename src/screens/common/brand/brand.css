@@ -1,0 +1,63 @@
+.brand {
+  position: relative;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: rgba(0, 0, 0, 0.4);
+  display: flex;
+  font-size: 1.5em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 0 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.brand .brand-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  transition: all 0.5s;
+}
+
+.brand:hover {
+  color: var(--font-color);
+}
+
+.brand .menu-content {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #333;
+  font-size: 0.8em;
+  font-weight: 300;
+  width: 100%;
+}
+
+.brand .menu-content {
+  margin-top: 60px;
+}
+
+.brand .menu-content > * {
+  height: 3em;
+  line-height: 3em;
+  padding: 0 20px;
+}
+
+.brand .menu-content .menu-title {
+  font-size: 0.9em;
+  color: rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.brand .menu-content .menu-link:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.brand .menu-content .menu-link > a {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.brand .menu-content .menu-link > a:hover {
+  color: var(--font-color);
+}

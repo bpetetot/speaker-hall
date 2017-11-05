@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 
+import IconLabel from '../../../../components/iconLabel'
 import Avatar from '../../../../components/avatar'
 import './avatarMenu.css'
 
@@ -40,14 +41,12 @@ class MenuContainer extends Component {
           className="menu-content"
           style={{ display: visible ? 'block' : 'none' }}
         >
-          <ul>
-            <li className="menu-title">{fullname}</li>
-            <li>
-              <a href="/" onClick={signout}>
-                Disconnect
-              </a>
-            </li>
-          </ul>
+          <div className="menu-title">{fullname}</div>
+          <div className="menu-link">
+            <a href="/" onClick={signout}>
+              <IconLabel icon="fa fa-sign-out" label="Sign out" />
+            </a>
+          </div>
         </div>
       </div>
     )

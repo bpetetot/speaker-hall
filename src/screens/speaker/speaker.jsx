@@ -2,7 +2,7 @@ import React from 'react'
 import { Fragment } from 'redux-little-router'
 
 import protect from '../../components/protect'
-import Brand from '../../components/brand'
+import Brand from '../common/brand'
 import Navbar from '../common/navbar'
 import Sidebar from './sidebar'
 import Dashboard from './dashboard'
