@@ -1,7 +1,7 @@
 import { connect } from 'react-redux'
 
 import { getUser, signout } from '../../../../redux/auth'
-import AvatarMenu from './avatarMenu'
+import AvatarDropdown from './avatarDropdown'
 
 const mapState = state => ({
   fullname: getUser(state).displayName,
@@ -12,4 +12,4 @@ const mapDispatch = dispatch => ({
   signout: () => dispatch(signout()),
 })
 
-export default connect(mapState, mapDispatch)(AvatarMenu)
+export default connect(mapState, mapDispatch)(AvatarDropdown)

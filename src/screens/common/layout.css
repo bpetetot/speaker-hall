@@ -1,23 +1,23 @@
-.speaker-navbar {
+.layout-navbar {
   grid-area: navbar;
 }
 
-.speaker-sidebar {
+.layout-sidebar {
   grid-area: sidebar;
   overflow: scroll;
 }
 
-.speaker-main {
+.layout-main {
   grid-area: main;
   padding: 20px;
   overflow: scroll;
 }
 
-.speaker-brand {
+.layout-brand {
   grid-area: brand;
 }
 
-.speaker-layout {
+.layout-screen {
   display: grid;
   grid-template-columns: 240px auto;
   grid-template-rows: 60px auto;
@@ -26,14 +26,14 @@
 }
 
 @media only screen and (max-width: 640px) {
-  .speaker-layout {
-    grid-template-columns: auto auto;
-    grid-template-areas: 'brand brand' 'main main';
+  .layout-screen {
+    grid-template-columns: auto;
+    grid-template-areas: 'brand' 'main';
   }
-  .speaker-sidebar {
+  .layout-navbar {
     display: none;
   }
-  .speaker-navbar {
+  .layout-sidebar {
     display: none;
   }
 }

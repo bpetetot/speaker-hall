@@ -2,21 +2,21 @@ import React from 'react'
 import { Fragment } from 'redux-little-router'
 
 import protect from '../../components/protect'
-import Brand from '../../components/brand'
+import Brand from '../common/brand'
 import Navbar from '../common/navbar'
 import Sidebar from './sidebar'
 import Events from './events'
 import Event from './event'
 import Dashboard from './dashboard'
 
-import './organizer.css'
+import '../common/layout.css'
 
 const Organizer = () => (
-  <div className="organizer-layout">
-    <Brand className="organizer-brand" />
-    <Navbar className="organizer-navbar" />
-    <Sidebar className="organizer-sidebar" />
-    <div className="organizer-main">
+  <div className="layout-screen">
+    <Brand className="layout-brand" />
+    <Navbar className="layout-navbar" />
+    <Sidebar className="layout-sidebar" />
+    <div className="layout-main">
       <Fragment forRoute="/events">
         <Events />
       </Fragment>
