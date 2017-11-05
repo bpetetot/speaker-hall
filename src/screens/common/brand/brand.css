@@ -2,7 +2,7 @@
   position: relative;
   align-items: center;
   background-color: var(--primary-color);
-  color: rgba(0, 0, 0, 0.4);
+  color: rgba(0, 0, 0, 0.5);
   display: flex;
   font-size: 1.5em;
   font-weight: 700;
@@ -28,36 +28,29 @@
   left: 0;
   top: 0;
   background: #333;
-  font-size: 0.8em;
+  font-size: 0.7em;
   font-weight: 300;
   width: 100%;
 }
 
 .brand .menu-content {
+  display: flex;
+  flex-direction: column;
   margin-top: 60px;
 }
 
 .brand .menu-content > * {
+  display: block;
   height: 3em;
   line-height: 3em;
   padding: 0 20px;
 }
 
-.brand .menu-content .menu-title {
-  font-size: 0.9em;
-  color: rgba(255, 255, 255, 0.3);
-  text-transform: uppercase;
-  letter-spacing: 1px;
-}
-
-.brand .menu-content .menu-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.brand .menu-content .menu-link > a {
+.brand .menu-content > a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.brand .menu-content .menu-link > a:hover {
+.brand .menu-content > a:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: var(--font-color);
 }

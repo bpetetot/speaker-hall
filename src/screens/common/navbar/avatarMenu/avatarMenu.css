@@ -14,11 +14,14 @@
 }
 
 .avatar-menu .menu-content {
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
   padding: 5px 0;
 }
 
 .avatar-menu .menu-content > * {
+  display: block;
   height: 2.5em;
   line-height: 2.5em;
   padding: 0 10px;
@@ -31,14 +34,11 @@
   letter-spacing: 1px;
 }
 
-.avatar-menu .menu-content .menu-link:hover {
-  background: rgba(255, 255, 255, 0.1);
-}
-
-.avatar-menu .menu-content .menu-link > a {
+.avatar-menu .menu-content > a {
   color: rgba(255, 255, 255, 0.7);
 }
 
-.avatar-menu .menu-content .menu-link > a:hover {
+.avatar-menu .menu-content > a:hover {
+  background: rgba(255, 255, 255, 0.1);
   color: var(--font-color);
 }

@@ -49,21 +49,15 @@ class Brand extends Component {
           </span>
         </div>
         <div className="menu-content" style={{ display: visible ? 'block' : 'none' }}>
-          <div className="menu-link">
-            <Link href="/speaker">
-              <IconLabel icon="fa fa-microphone" label="Speaker Hall" />
-            </Link>
-          </div>
-          <div className="menu-link">
-            <Link href="/organizer">
-              <IconLabel icon="fa fa-rocket" label="Organizer Hall" />
-            </Link>
-          </div>
-          <div className="menu-link">
-            <Link href="/">
-              <IconLabel icon="fa fa-home" label="Conference Hall" />
-            </Link>
-          </div>
+          <Link href="/speaker">
+            <IconLabel icon="fa fa-microphone" label="Speaker Hall" />
+          </Link>
+          <Link href="/organizer">
+            <IconLabel icon="fa fa-rocket" label="Organizer Hall" />
+          </Link>
+          <Link href="/">
+            <IconLabel icon="fa fa-home" label="Conference Hall" />
+          </Link>
         </div>
       </div>
     )

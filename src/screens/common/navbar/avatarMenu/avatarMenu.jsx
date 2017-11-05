@@ -44,11 +44,9 @@ class MenuContainer extends Component {
         <Avatar image={image} fullname={fullname} />
         <div className="menu-content" style={{ display: visible ? 'block' : 'none' }}>
           <div className="menu-title">{fullname}</div>
-          <div className="menu-link">
-            <a href="/" onClick={signout}>
-              <IconLabel icon="fa fa-sign-out" label="Sign out" />
-            </a>
-          </div>
+          <a href="/" onClick={signout}>
+            <IconLabel icon="fa fa-sign-out" label="Sign out" />
+          </a>
         </div>
       </div>
     )
