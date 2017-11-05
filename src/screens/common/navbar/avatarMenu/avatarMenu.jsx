@@ -32,15 +32,17 @@ class MenuContainer extends Component {
     const { fullname, image, signout } = this.props
     const { visible } = this.state
     return (
-      <div role="button" tabIndex="0" className="avatar-menu" onClick={this.handleClick}>
+      <div
+        role="button"
+        ref={(e) => {
+          this.menu = e
+        }}
+        tabIndex="0"
+        className="avatar-menu"
+        onClick={this.handleClick}
+      >
         <Avatar image={image} fullname={fullname} />
-        <div
-          ref={(e) => {
-            this.menu = e
-          }}
-          className="menu-content"
-          style={{ display: visible ? 'block' : 'none' }}
-        >
+        <div className="menu-content" style={{ display: visible ? 'block' : 'none' }}>
           <div className="menu-title">{fullname}</div>
           <div className="menu-link">
             <a href="/" onClick={signout}>

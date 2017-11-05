@@ -33,20 +33,22 @@ class Brand extends Component {
     const { className, title } = this.props
     const { visible } = this.state
     return (
-      <div role="button" tabIndex="0" className={cn('brand', className)} onClick={this.handleClick}>
+      <div
+        role="button"
+        ref={(e) => {
+          this.menu = e
+        }}
+        tabIndex="0"
+        className={cn('brand', className)}
+        onClick={this.handleClick}
+      >
         <div className="brand-title">
           <span>{title}</span>
           <span>
             <i className="fa fa-caret-down" />
           </span>
         </div>
-        <div
-          ref={(e) => {
-            this.menu = e
-          }}
-          className="menu-content"
-          style={{ display: visible ? 'block' : 'none' }}
-        >
+        <div className="menu-content" style={{ display: visible ? 'block' : 'none' }}>
           <div className="menu-link">
             <Link href="/speaker">
               <IconLabel icon="fa fa-microphone" label="Speaker Hall" />

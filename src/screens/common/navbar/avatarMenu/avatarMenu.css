@@ -1,6 +1,7 @@
 .avatar-menu {
   position: relative;
   outline: none;
+  z-index: 1;
 }
 
 .avatar-menu .menu-content {
