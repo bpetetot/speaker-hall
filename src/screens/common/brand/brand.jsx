@@ -30,7 +30,7 @@ class Brand extends Component {
   }
 
   render() {
-    const { className, title } = this.props
+    const { className, title, currentApp } = this.props
     const { visible } = this.state
     return (
       <div
@@ -49,12 +49,16 @@ class Brand extends Component {
           </span>
         </div>
         <div className="menu-content" style={{ display: visible ? 'block' : 'none' }}>
-          <Link href="/speaker">
-            <IconLabel icon="fa fa-microphone" label="Speaker Hall" />
-          </Link>
-          <Link href="/organizer">
-            <IconLabel icon="fa fa-rocket" label="Organizer Hall" />
-          </Link>
+          {currentApp === 'organizer' && (
+            <Link href="/speaker">
+              <IconLabel icon="fa fa-microphone" label="Speaker Hall" />
+            </Link>
+          )}
+          {currentApp === 'speaker' && (
+            <Link href="/organizer">
+              <IconLabel icon="fa fa-rocket" label="Organizer Hall" />
+            </Link>
+          )}
           <Link href="/">
             <IconLabel icon="fa fa-home" label="Conference Hall" />
           </Link>
@@ -66,6 +70,7 @@ class Brand extends Component {
 
 Brand.propTypes = {
   title: PropTypes.string.isRequired,
+  currentApp: PropTypes.string.isRequired,
   className: PropTypes.string,
 }
 
