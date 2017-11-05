@@ -9,14 +9,14 @@ import Dashboard from './dashboard'
 import Profile from './profile'
 import Talks from './talks'
 
-import './speaker.css'
+import '../common/layout.css'
 
 const Speaker = () => (
-  <div className="speaker-layout">
-    <Brand className="speaker-brand" />
-    <Navbar className="speaker-navbar" />
-    <Sidebar className="speaker-sidebar" />
-    <div className="speaker-main">
+  <div className="layout-screen">
+    <Brand className="layout-brand" />
+    <Navbar className="layout-navbar" />
+    <Sidebar className="layout-sidebar" />
+    <div className="layout-main">
       <Fragment forRoute="/profile">
         <Profile />
       </Fragment>

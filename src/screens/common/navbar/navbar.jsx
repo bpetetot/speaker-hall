@@ -1,11 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Navbar from '../../../components/navbar'
-import AvatarMenu from './avatarMenu'
+import AvatarDropdown from './avatarDropdown'
 
 const SpeakerNavbar = ({ className }) => (
   <Navbar className={className}>
-    <AvatarMenu />
+    <AvatarDropdown />
   </Navbar>
 )
 

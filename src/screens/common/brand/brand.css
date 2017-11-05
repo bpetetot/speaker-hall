@@ -1,5 +1,4 @@
 .brand {
-  position: relative;
   align-items: center;
   background-color: var(--primary-color);
   color: rgba(0, 0, 0, 0.5);
@@ -12,6 +11,10 @@
   cursor: pointer;
 }
 
+.brand:hover {
+  color: var(--font-color);
+}
+
 .brand .brand-title {
   display: flex;
   justify-content: space-between;
@@ -19,39 +22,16 @@
   transition: all 0.5s;
 }
 
-.brand:hover {
-  color: var(--font-color);
-}
-
-.brand .menu-content {
-  position: absolute;
+.brand .brand-menu {
   left: 0;
   top: 0;
-  background: #333;
   font-size: 0.7em;
   font-weight: 300;
   width: 100%;
   box-shadow: 0px 1px 5px 0px #111;
-}
-
-.brand .menu-content {
   display: flex;
   flex-direction: column;
+  border-radius: 0px;
   margin-top: 60px;
-}
-
-.brand .menu-content > * {
-  display: block;
-  height: 3em;
-  line-height: 3em;
-  padding: 0 20px;
-}
-
-.brand .menu-content > a {
-  color: rgba(255, 255, 255, 0.7);
-}
-
-.brand .menu-content > a:hover {
-  background: rgba(255, 255, 255, 0.1);
-  color: var(--font-color);
+  padding: 0;
 }
