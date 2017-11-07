@@ -4,6 +4,7 @@ const routes = {
   '/speaker': {
     '/profile': {},
     '/talks': {},
+    '/talk/:id': {},
   },
   '/organizer': {
     '/events': {},
