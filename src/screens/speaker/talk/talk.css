@@ -1,0 +1,8 @@
+.talk-form > * {
+  margin-bottom: 15px;
+}
+
+.talk-form .talk-button {
+  float: right;
+  margin-left: 15px;
+}

@@ -8,6 +8,7 @@ import Sidebar from './sidebar'
 import Dashboard from './dashboard'
 import Profile from './profile'
 import Talks from './talks'
+import Talk from './talk'
 
 import '../common/layout.css'
 
@@ -22,6 +23,9 @@ const Speaker = () => (
       </Fragment>
       <Fragment forRoute="/talks">
         <Talks />
+      </Fragment>
+      <Fragment forRoute="/talk/:id">
+        <Talk />
       </Fragment>
       <Fragment forRoute="/">
         <Dashboard />
