@@ -24,5 +24,6 @@ firebase login
 Build and deploy the app :
 ```
 yarn build
+firebase use --add
 firebase deploy
 ```
